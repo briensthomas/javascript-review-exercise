@@ -24,7 +24,7 @@ console.log(`areaOfTriangle(5, 10) === 25 : ${areaOfTriangle(5, 10) === 25}`);
 // Given 2 numbers, return true if their sum is less than 100
 // return false if it is greater than 100
 function lessThan100(a, b) {
-    if (a * b < 100) {
+    if (a + b < 100) {
         return true;
     }
 }

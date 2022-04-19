@@ -24,10 +24,8 @@ console.log(`areaOfTriangle(5, 10) === 25 : ${areaOfTriangle(5, 10) === 25}`);
 // Given 2 numbers, return true if their sum is less than 100
 // return false if it is greater than 100
 function lessThan100(a, b) {
-    if (a*b < 100) {
+    if (a * b < 100) {
         return true;
-    } else {
-        return false;
     }
 }
 console.log(`lessThan100(5, 10) === true : ${lessThan100(5, 10) === true}`);
@@ -39,7 +37,7 @@ console.log(`lessThan100(100, 10) === false : ${lessThan100(100, 10) === false}`
 // and a third parameter called middle_name which is optional.
 // The function should return a string with the first, middle and last names
 function getFormattedName(first_name, last_name, middle_name) {
-    if (middle_name == null) {
+    if (!middle_name) {
         return (first_name + ' ' + last_name);
     } else return (first_name + ' ' + middle_name + ' ' + last_name);
 }
